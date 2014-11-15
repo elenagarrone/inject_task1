@@ -1,9 +1,10 @@
 class Array
 
 	def new_inject (default_value = nil)
+			copy = self.dup
 			result = default_value || first
-			self.shift if default_value == nil #[2,3,4]
-			self.each do |element| # if the default value is given the result == default value and then we take each element of the array
+			copy.shift if default_value == nil #[2,3,4]
+			copy.each do |element| # if the default value is given the result == default value and then we take each element of the array
 				result = yield(result, element) # if default value is not given, the first time the result == first number of the array = 1
 			end
 		result
