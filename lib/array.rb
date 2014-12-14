@@ -4,9 +4,7 @@ class Array
 		copy = self.dup
 		result = default_value || first
 		copy.shift if default_value == nil
-		copy.each do |element|
-			result = yield(result, element)
-		end
+		copy.each { |element| result = yield(result, element) }
 		result
 	end
 
