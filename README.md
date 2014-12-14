@@ -2,9 +2,17 @@
 
 Rewrite the inject method
 =========================
-First task of the second week challenge: we had to rewrite the inject method and test with Rspec.
+First task of the second week challenge: we had to rewrite the inject method and test it with Rspec.
 
 Technologies:
 ------------
 - Ruby
 - Rspec
+
+Test it:
+-------
+```shell
+$ git clone https://github.com/elenagarrone/inject_task1.git
+$ cd inject_task1
+$ rspec
+```
